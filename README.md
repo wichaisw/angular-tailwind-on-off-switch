@@ -1,6 +1,16 @@
 # AngularTailwindOnOffSwitch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+Need tailwindcss with scss to run.
+
+#### Dependencies
+- tailwindcss
+- postcss
+- postcss-scss
+- post-import
+- loader
+- autoprefixer
+- purgecss
 
 ## Development server
 
