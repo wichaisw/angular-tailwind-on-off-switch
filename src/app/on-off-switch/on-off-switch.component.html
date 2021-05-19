@@ -1,0 +1,15 @@
+<div
+  (click)="onToggleSwitch()"
+  [ngClass]="isOn
+  ? 'bg-blue-500 border box-border transition duration-100 rounded-full border-gray-200 flex items-center cursor-pointer w-14 justify-start'
+  : 'bg-gray-500 border box-border transition duration-100 rounded-full border-gray-200 flex items-center cursor-pointer w-14 justify-start'"
+>
+  <span *ngIf="isOn" class="text-white text-xs pl-2">{{onText}}</span>
+  <span 
+  [ngClass]="isOn 
+    ? 'translate-x-2 transition-transform transform rounded-full border-2 w-6 h-6 border-gray-200 shadow-inner bg-white shadow'
+    : 'transition-transform transform rounded-full border-2 w-6 h-6 border-gray-200 shadow-inner bg-white shadow'"
+  >
+  </span>
+  <span *ngIf="!isOn" class="text-white text-xs px-1">{{offText}}</span>
+</div>
